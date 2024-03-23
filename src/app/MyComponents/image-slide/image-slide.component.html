@@ -1,0 +1,10 @@
+<div class="image-slider">
+  <div class="slide" *ngFor="let image of images; let i = index" [style.display]="i === currentSlide ? 'block' : 'none'">
+    <img (mouseenter)="changeOpacity(1)" (mouseleave)="changeOpacity(0)" class="image" [src]="image.src" [alt]="image.alt">
+  </div>
+  <button [style.opacity]="targetOpacity" (mouseenter)="changeOpacity(1)" class="prev" (click)="prevSlide()">&#10094;</button>
+  <button [style.opacity]="targetOpacity" (mouseenter)="changeOpacity(1)" class="next" (click)="nextSlide()">&#10095;</button>
+</div>
+<div class="indicators">
+  <span *ngFor="let image of images; let i = index" [class]="i === currentSlide ? 'indicator active' : 'indicator'" (click)="goToSlide(i)"></span>
+</div>

@@ -1,0 +1,40 @@
+.search-bar {
+    size: 30;
+}
+
+/* Add your custom CSS styles here */
+/* For example, you can add custom styles to the navbar or modify other elements on your page */
+
+/* Example CSS for the navbar background color */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+/* Example CSS for the navigation links */
+.nav-link {
+    color: #333; /* Change link text color */
+    font-weight: bold; /* Add bold font weight */
+}
+
+/* Example CSS for the navbar brand logo */
+.navbar-brand img {
+    max-width: 100px; /* Adjust the logo size as needed */
+}
+
+.nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+ul  li {
+   margin: 0 10px;
+}
+
+
+ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-menu .dropdown-item {
+    margin: 0;
+}
